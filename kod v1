@@ -1,1 +1,9 @@
-
+#Номер 1
+a = float(input())
+b = int(input())
+print(round(a , b))
+#Номер 2
+c = int(input())
+n = int(input())
+res = (c + n) / 2
+print(int(res))
