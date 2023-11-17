@@ -14,5 +14,10 @@ list1 = input().split()
 list2 = input().split()
 list1 = [int(i) for i in list1]
 list2 = [int(i) for i in list2]
-x = list(zip(list1, list2))
-print(list(map(lambda i: sum(i), x)))
+if (len(list1)) < (len(list2)):
+    for i in range(len(list2) - len(list1)):
+        list1.append(0)
+if (len(list2)) < (len(list1)):
+    for i in range(len(list1) - len(list2)):
+        list2.append(0)
+print(list(map(lambda a, b: a + b, list1, list2)))
