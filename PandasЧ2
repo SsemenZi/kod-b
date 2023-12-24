@@ -1,0 +1,5 @@
+import pandas as pd
+dd = pd.read_csv('/content/Customers.csv', delimiter= ';')
+dd
+dd[(dd["Age"] > 30) & (dd["Income"] < 30000)]
+dd[(dd['Profession'] == 'Lawyer') & (dd['Work Experience'] > 5)]
